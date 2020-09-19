@@ -1,6 +1,6 @@
-<h3 align="center">Traffic Sign Detector</h3>
+<h2 align="center">Traffic Sign Detector</h2>
 
-# Building Traffic Sign detector model using convolution neural networks(CNN's)
+<h3>Building Traffic Signs detector model using convolution neural networks(CNN's)</h3>
 
-# Dataset : http://benchmark.ini.rub.de/   The dataset consists of 39209 images with 43 
-# different classes
+<h3>Dataset : http://benchmark.ini.rub.de/   The dataset consists of 39209 images with 43 
+different classes </h3>
