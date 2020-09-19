@@ -40,7 +40,8 @@ for dir in os.listdir(data_dir):
 # spliting the data
 
 input_array = np.stack(list_images)
-train_y = keras.utils.np_utils.to_categorical(output)randomize = np.arange(len(input_array))
+train_y = keras.utils.np_utils.to_categorical(output)
+randomize = np.arange(len(input_array))
 np.random.shuffle(randomize)
 x = input_array[randomize]
 y = train_y[randomize]
@@ -48,7 +49,8 @@ y = train_y[randomize]
 
 split_size = int(x.shape[0]*0.6)
 train_x, val_x = x[:split_size], x[split_size:]
-train1_y, val_y = y[:split_size], y[split_size:]split_size = int(val_x.shape[0]*0.5)
+train1_y, val_y = y[:split_size], y[split_size:]
+split_size = int(val_x.shape[0]*0.5)
 val_x, test_x = val_x[:split_size], val_x[split_size:]
 val_y, test_y = val_y[:split_size], val_y[split_size:]
 
